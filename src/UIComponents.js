@@ -54,7 +54,6 @@ const calculateDotSize = (size) => {
 };
 
 const TabButton = Styled.TouchableOpacity`
-	flex: 1;
 	flex-direction: ${(p) =>
     p.tabButtonLayout == "vertical"
       ? "column"
@@ -63,8 +62,7 @@ const TabButton = Styled.TouchableOpacity`
       : "row"};
 	justify-content: center;
 	align-items: center;
-	border-radius: 100;
-	padding-vertical: 10;
+	border-radius: 20;
 	flex-grow: ${(p) =>
     p.focused ? p.labelLength / calculateDotSize(p.dotSize) + 1 : 1};
 `;
